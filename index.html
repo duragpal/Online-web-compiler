@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online HTML, CSS, and JavaScript Compiler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Files</h2>
+        <ul>
+          <li><button id="html-tab" class="tab active">HTML</button></li>
+          <li><button id="css-tab" class="tab">CSS</button></li>
+          <li><button id="js-tab" class="tab">JavaScript</button></li>
+        </ul>
+      </div>
+      <div class="editor-container">
+        <textarea
+          id="html-code"
+          class="code-editor active"
+          placeholder="Type HTML code here"
+        ></textarea>
+        <textarea
+          id="css-code"
+          class="code-editor"
+          placeholder="Type CSS code here"
+        ></textarea>
+        <textarea
+          id="js-code"
+          class="code-editor"
+          placeholder="Type JavaScript code here"
+        ></textarea>
+        <button id="run-code">Run Code</button>
+      </div>
+      <div class="output-container">
+        <h2>Output</h2>
+        <iframe id="output" sandbox="allow-scripts"></iframe>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
